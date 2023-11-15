@@ -5,7 +5,7 @@ import {StartCourseMetaSettings} from '~/constants';
 import {StartCourseContainer} from '~/containers';
 import {getProtectedServerSideProps} from '~/utils';
 
-const HomePage: NextPage = () => (
+const StartCoursePage: NextPage = () => (
   <SeoLayout
     title={StartCourseMetaSettings.title}
     metaDescription={StartCourseMetaSettings.description}>
@@ -16,4 +16,4 @@ const HomePage: NextPage = () => (
 );
 export const getServerSideProps = getProtectedServerSideProps();
 
-export default HomePage;
+export default StartCoursePage;

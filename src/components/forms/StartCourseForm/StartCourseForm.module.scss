@@ -1,0 +1,9 @@
+.wrapper {
+  @extend %flex-column;
+  gap: 16px;
+
+  &__checkbox {
+    margin-top: 76px;
+    margin-bottom: 57px;
+  }
+}

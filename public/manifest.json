@@ -1,0 +1,12 @@
+{
+  "name": "Course App",
+  "short_name": "Course app",
+  "description": "Course app",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#bf9425",
+  "background_color": "#bf9425",
+  "scope": "/",
+  "splash_pages": null
+}

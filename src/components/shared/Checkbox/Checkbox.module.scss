@@ -1,0 +1,76 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+
+  &__label {
+    cursor: pointer;
+
+    &:active {
+      background-color: #35694f;
+      width: 21.5px;
+      height: 21px;
+      position: absolute;
+      z-index: 3;
+      border-radius: 3px;
+
+      &:after {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M1 6.5L4.5 10L10.5 1" stroke="white" stroke-width="2.5"/></svg>');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+      }
+
+      p {
+        white-space: nowrap;
+        margin: 1px 0 0 32.5px;
+      }
+    }
+  }
+
+  &__checkbox {
+    appearance: none;
+    background-color: #fff;
+    border: 1.5px solid #35694f;
+    width: 21.5px;
+    height: 21px;
+    padding: 6px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 11px;
+
+    &:hover {
+      background-color: #e3f9ee;
+    }
+
+    &:active {
+      background-color: #35694f;
+      &:after {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M1 6.5L4.5 10L10.5 1" stroke="white" stroke-width="2.5"/></svg>');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+      }
+    }
+
+    &:checked {
+      background-color: #fff;
+      &:after {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M1 6.5L4.5 10L10.5 1" stroke="rgb(53 105 79)" stroke-width="2.5"/></svg>');
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+      }
+    }
+  }
+}
